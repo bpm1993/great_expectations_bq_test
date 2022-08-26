@@ -1,0 +1,52 @@
+{
+  "data_asset_type": null,
+  "expectation_suite_name": "warning",
+  "expectations": [
+    {
+      "expectation_type": "expect_table_columns_to_match_ordered_list",
+      "kwargs": {
+        "column_list": [
+          "date",
+          "ID",
+          "quantity"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_table_row_count_to_be_between",
+      "kwargs": {
+        "max_value": 3,
+        "min_value": 3
+      },
+      "meta": {}
+    }
+  ],
+  "ge_cloud_id": null,
+  "meta": {
+    "citations": [
+      {
+        "batch_request": {
+          "data_asset_name": "estudos_munhoz.teste_merge_raw",
+          "data_connector_name": "default_runtime_data_connector_name",
+          "datasource_name": "my_bigquery_datasource",
+          "limit": 1000
+        },
+        "citation_date": "2022-08-18T19:44:41.605422Z",
+        "comment": "Created suite added via CLI"
+      }
+    ],
+    "columns": {
+      "ID": {
+        "description": ""
+      },
+      "date": {
+        "description": ""
+      },
+      "quantity": {
+        "description": ""
+      }
+    },
+    "great_expectations_version": "0.15.18"
+  }
+}
